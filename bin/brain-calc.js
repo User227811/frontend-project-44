@@ -3,71 +3,72 @@ console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
 console.log('Hello,' + name + '!');
 console.log('What is the result of the expression?');
-let a = Math.random() * 9;
-let a1 = Math.floor(Math.random() * 250);
-let a2 = Math.floor(Math.random() * 250);
-let q = 0;
-let q1 = 0;
+let random = Math.random() * 9;
+let random1 = Math.floor(Math.random() * 250);
+let random2 = Math.floor(Math.random() * 250);
+let correct = 0;
+let win = 0;
 for (let i = 0; i !== 3; i++){
-    if (a < 3){
-        q = a1 * a2;
-        console.log(a1 + " * " + a2);
+    if (random < 3){
+        correct = random1 * random2;
+        console.log(random1 + " * " + random2);
         let number = readlineSync.question();
-        if (parseInt(number) === q){
+        if (parseInt(number) === correct){
             console.log('Correct!');
-            q1 += 1;
-            a = Math.random() * 9;
-            a1 = Math.floor(Math.random() * 250);
-            a2 = Math.floor(Math.random() * 250);
+            win += 1;
+            random = Math.random() * 9;
+            random1 = Math.floor(Math.random() * 250);
+            random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + a1 + ' ' + '* ' + a2);
+            console.log('Question: ' + random1 + ' ' + '* ' + random2);
             console.log('Your answer: ' + number);
-            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + q + '\'.' );
+            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
             break;
         }
     }
-    if (a < 6 && a >= 3){
-        q = a1 + a2;
-        console.log(a1 + " + " + a2);
+    if (random < 6 && random >= 3){
+        correct = random1 + random2;
+        console.log(random1 + " + " + random2);
         let number = readlineSync.question();
-        if (parseInt(number) === q){
+        if (parseInt(number) === correct){
             console.log('Correct!');
-            q1 += 1;
-            a = Math.random() * 9;
-            a1 = Math.floor(Math.random() * 250);
-            a2 = Math.floor(Math.random() * 250);
+            win += 1;
+            random = Math.random() * 9;
+            random1 = Math.floor(Math.random() * 250);
+            random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + a1 + ' ' + '* ' + a2);
+            console.log('Question: ' + random1 + ' ' + '+ ' + random2);
             console.log('Your answer: ' + number);
-            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + q + '\'.' );
+            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
             break;
         }
     }
-    if (a < 9 && a >= 6){
-        q = a1 - a2;
-        console.log(a1 + " - " + a2);
+    if (random < 9 && random >= 6){
+        correct = random1 - random2;
+        console.log(random1 + " - " + random2);
         let number = readlineSync.question();
 
-        if (parseInt(number) === q){
+        if (parseInt(number) === correct){
             console.log('Correct!');
-            q1 += 1;
-            a = Math.random() * 9;
-            a1 = Math.floor(Math.random() * 250);
-            a2 = Math.floor(Math.random() * 250);
+            win += 1;
+            random = Math.random() * 9;
+            random1 = Math.floor(Math.random() * 250);
+            random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + a1 + ' ' + '* ' + a2);
+            console.log('Question: ' + random1 + ' ' + '- ' + random2);
             console.log('Your answer: ' + number);
-            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + q + '\'.' );
+            console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
             break;
         }
     }
-    if (q1 === 3){
+    if (win === 3){
         console.log('Congratulations, ' + name + '!');
+        break;
     }
 }

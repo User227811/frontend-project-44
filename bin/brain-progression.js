@@ -1,36 +1,36 @@
-import readlineSync from 'readline-sync';
+ import readlineSync from 'readline-sync';
 console.log('brain-progression');
 let name = readlineSync.question('May, I have your name? ');
 console.log('Hello, ' + name);
 console.log('What number is missing in the progression?');
-let q = Math.floor(Math.random() * 100000);
-let q1 = Math.floor(Math.random() * 10);
-let q2 = [];
-let a = 0;
-let a1 = 0;
-let z = 0;
-for (let a2 = 0; a2 < 3; a2++){
-    for(let z = 5; z <= 20; z = z + 1){
-        a1 = z - 5;
-        q2[a1] = parseInt(q) * z;
+let random = Math.floor(Math.random() * 100000);
+let random1 = Math.floor(Math.random() * 10);
+let array = [];
+let win = 0;
+let id = 0;
+let correct = 0;
+for (let i = 0; i < 3; i++){
+    for(let correct = 5; correct <= 20; correct = correct + 1){
+        id = correct - 5;
+        array[id] = parseInt(random) * correct;
     }
-    z = q2[q1];
-    q2[q1] = '..';
-    console.log(q2.join(' '));
+    correct = array[random1];
+    array[random1] = '..';
+    console.log(array.join(' '));
     let number = readlineSync.question('Your answer: ');
-    if (parseInt(number) === z){
+    if (parseInt(number) === correct){
         console.log('Correct!');
-        a = a + 1;
+        win = win + 1;
     }
-    if (parseInt(number) !== z){
-        console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \' ' +  z + '!');
+    if (parseInt(number) !== correct){
+        console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \' ' +  correct + '!');
         console.log('Let\'s try again, ' + name + '!');
         break;
     }
-    if (a === 3){
+    if (win === 3){
         console.log('Congratulations, ' + name + '!');
         break;
     }
-    q = Math.floor(Math.random() * 100000);
-    q1 = Math.floor(Math.random() * 10);
+    random = Math.floor(Math.random() * 100000);
+    random1 = Math.floor(Math.random() * 10);
 }

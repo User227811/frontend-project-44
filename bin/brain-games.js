@@ -1,2 +1,2 @@
-let texts = "node bin/brain-games.js \nWelcome to the Brain Games!";
+let texts = "Welcome to the Brain Games!";
 console.log(texts);
