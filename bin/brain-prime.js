@@ -15,7 +15,7 @@ function isPrime(num) {
     if (num % i === 0) return false;
   }
   return true;
-}
+} 
 
 function printPrimes(max) {
   for (let i = 2; i <= max; i++) {

@@ -1,2 +1,5 @@
-let texts = "Welcome to the Brain Games!";
-console.log(texts);
+function time(){
+  let texts = "Welcome to the Brain Games!";
+  console.log(texts);
+}
+time();
