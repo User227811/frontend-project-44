@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
- import  time  from "./brain-games.js";
+import  time  from "./brain-games.js";
 time();
 console.log('brain-progression');
 let name = readlineSync.question('May, I have your name? ');
