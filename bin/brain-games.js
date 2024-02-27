@@ -5,4 +5,3 @@ function time(){
   console.log(texts);
 }
 export default time;
-z();
