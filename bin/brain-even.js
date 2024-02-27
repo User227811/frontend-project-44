@@ -9,7 +9,7 @@ export function z(){
     let random = Math.floor(Math.random() * 25);
     let win = 0;
     for (let q = 0; q < 3; q++){
-        console.log(`Question: ${random}`);
+        console.log(`/Question: ${random}/`);
         const choice = readlineSync.question('Your answer: ');
         if (random % 2 === 0 && choice === 'yes'){
             console.log('Correct!');
