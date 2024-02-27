@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import time from "frontend-project-44/bin/brain-games.js";
+import time from "./brain-games.js";
 function text(){
     console.log('brain-games');
     console.log('Welcome to the Brain Games!');
