@@ -1,4 +1,5 @@
- import readlineSync from 'readline-sync';
+#!/usr/bin/env node
+import readlineSync from 'readline-sync';
  import  time  from "./brain-games.js";
 time();
 console.log('brain-progression');
