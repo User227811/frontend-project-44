@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { z } from "./brain-even.js";
+import text from "../src/cli.js";
 function time(){
   let texts = "Welcome to the Brain Games!";
   console.log(texts);
