@@ -18,6 +18,7 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
+    "link": "^2.1.0",
     "readline-sync": "^1.4.10"
   }
 }
