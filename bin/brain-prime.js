@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from "readline-sync";
 import time from "brain-games.js";
+import {  name } from "../src/cli.js";
 time();
-const name = readlineSync.question("May I have your name? ");
-console.log("Hello," + name + "!");
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 let random = Math.floor(((Math.random() * 1000)));
 let rounded = Math.sqrt(random);

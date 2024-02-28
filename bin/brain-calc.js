@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import time from "./brain-games.js";
+import {  name } from "../src/cli.js";
 time();
-const name = readlineSync.question('May I have your name? ');
-console.log('Hello,' + name + '!');
 console.log('What is the result of the expression?');
 let random = Math.random() * 9;
 let random1 = Math.floor(Math.random() * 250);
