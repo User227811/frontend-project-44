@@ -28,7 +28,7 @@ for(let z2 = 0; z2 <= 3; z2++){
         win = win + 1;
     }
     if(win === 3){
-      console.log('Congratulations ' + name + '!');
+      console.log('Congratulations, ' + name + '!');
       break;
   }
     console.log('Question: ' + random1);
