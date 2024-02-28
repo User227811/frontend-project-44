@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from "readline-sync";
-import time from "brain-games.js";
+import time from "./brain-games.js";
 import {  name } from "../src/cli.js";
 time();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
