@@ -54,6 +54,6 @@ for (let win = 0; win !== 3; win += 1){
         break;
     }
     if(win === 2){
-        console.log('Congratulations ' + name + '!')
+        console.log('Congratulations, ' + name + '!')
     }
 }
