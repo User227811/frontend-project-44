@@ -39,6 +39,12 @@ for(let z2 = 0; z2 <= 3; z2++){
     if (number === 'no'){
       examination = false;
     }
+    if (random1 === 1 && number === 'no' || random1 === 0 && number === 'no'){
+      console.log('Correct!');
+      win = win + 1;
+      random1 = Math.floor(((Math.random() * 1000)));
+      continue;
+    }
     if (examination === isPrime(random1)){
         console.log('Correct!');
         win = win + 1;
