@@ -3,7 +3,6 @@ import readlineSync from 'readline-sync';
 import time from "./brain-games.js";
 import { name } from "../src/cli.js";
 time();
-console.log('Hello, ' + name);
 console.log('What number is missing in the progression?');
 let random = Math.floor(Math.random() * 100000);
 let random1 = Math.floor(Math.random() * 10);

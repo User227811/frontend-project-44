@@ -1,16 +1,14 @@
 #!/usr/bin/env node
 import readlineSync from "readline-sync";
 import time from "./brain-games.js";
-import {  name } from "../src/cli.js";
+import { name } from "../src/cli.js";
 time();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 let random = Math.floor(((Math.random() * 1000)));
 let rounded = Math.sqrt(random);
 let random1 = Math.floor(((Math.random() * 5)));
-let array = [];
 let win = 0;
 let examination = 0;
-let examenation1 = 0;
 function isPrime(num) {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) return false;

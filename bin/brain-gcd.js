@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import time from "./brain-games.js";
-import {  name } from "../src/cli.js";
+import { name } from "../src/cli.js";
 time();
 console.log('Find the greatest common divisor of given numbers.');
 let random1 = Math.floor(Math.random() * 2500);
