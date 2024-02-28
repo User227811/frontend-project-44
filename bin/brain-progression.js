@@ -17,7 +17,7 @@ for (let i = 0; i < 3; i++){
     }
     correct = array[random1];
     array[random1] = '..';
-    console.log(array.join(' '));
+    console.log('Question: ' + array.join(' '));
     let number = readlineSync.question('Your answer: ');
     if (parseInt(number) === correct){
         console.log('Correct!');
