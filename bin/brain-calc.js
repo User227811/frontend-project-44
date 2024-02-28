@@ -12,7 +12,7 @@ let win = 0;
 for (let i = 0; i !== 3; i++){
     if (random < 3){
         correct = random1 * random2;
-        console.log(random1 + " * " + random2);
+        console.log('Question: ' + random1 + " * " + random2);
         let number = readlineSync.question();
         if (parseInt(number) === correct){
             console.log('Correct!');
@@ -22,7 +22,6 @@ for (let i = 0; i !== 3; i++){
             random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + random1 + ' ' + '* ' + random2);
             console.log('Your answer: ' + number);
             console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
@@ -31,7 +30,7 @@ for (let i = 0; i !== 3; i++){
     }
     if (random < 6 && random >= 3){
         correct = random1 + random2;
-        console.log(random1 + " + " + random2);
+        console.log('Question: ' + random1 + " + " + random2);
         let number = readlineSync.question();
         if (parseInt(number) === correct){
             console.log('Correct!');
@@ -41,7 +40,6 @@ for (let i = 0; i !== 3; i++){
             random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + random1 + ' ' + '+ ' + random2);
             console.log('Your answer: ' + number);
             console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
@@ -50,7 +48,7 @@ for (let i = 0; i !== 3; i++){
     }
     if (random < 9 && random >= 6){
         correct = random1 - random2;
-        console.log(random1 + " - " + random2);
+        console.log('Question: ' + random1 + " - " + random2);
         let number = readlineSync.question();
 
         if (parseInt(number) === correct){
@@ -61,7 +59,6 @@ for (let i = 0; i !== 3; i++){
             random2 = Math.floor(Math.random() * 250);
         }
         else{
-            console.log('Question: ' + random1 + ' ' + '- ' + random2);
             console.log('Your answer: ' + number);
             console.log('\'' + number + '\' is wrong answer ;(. Correct answer was \'' + correct + '\'.' );
             console.log('Let\'s try again, ' + name + '!');
