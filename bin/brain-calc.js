@@ -20,6 +20,10 @@ for (let i = 0; i !== 3; i++){
             random = Math.random() * 9;
             random1 = Math.floor(Math.random() * 250);
             random2 = Math.floor(Math.random() * 250);
+            if (win === 3){
+                console.log('Congratulations, ' + name + '!');
+                break;
+            }
         }
         else{
             console.log('Your answer: ' + number);
@@ -38,6 +42,10 @@ for (let i = 0; i !== 3; i++){
             random = Math.random() * 9;
             random1 = Math.floor(Math.random() * 250);
             random2 = Math.floor(Math.random() * 250);
+            if (win === 3){
+                console.log('Congratulations, ' + name + '!');
+                break;
+            }
         }
         else{
             console.log('Your answer: ' + number);
@@ -57,6 +65,10 @@ for (let i = 0; i !== 3; i++){
             random = Math.random() * 9;
             random1 = Math.floor(Math.random() * 250);
             random2 = Math.floor(Math.random() * 250);
+            if (win === 3){
+                console.log('Congratulations, ' + name + '!');
+                break;
+            }
         }
         else{
             console.log('Your answer: ' + number);
