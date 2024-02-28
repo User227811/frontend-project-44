@@ -48,7 +48,7 @@ for(let z2 = 0; z2 <= 3; z2++){
     if (examination !== isPrime(random1)){
         console.log('Question: ' + random1);
         console.log('your answer: ' + number);
-        console.log('\'' + number+ '\' is wrong answer ;(. Correct answer was \'no\'.');
+        console.log('\'' + number+ '\' is wrong answer ;(. Correct answer was \'yes\'.');
         console.log('Let\'s try again, ' + name + '!');
         break;
     }
@@ -61,7 +61,7 @@ for(let z2 = 0; z2 <= 3; z2++){
     if (examination === isPrime(random1)){
       console.log('Question: ' + random1);
       console.log('your answer: ' + number);
-      console.log('\'' + number+ '\' is wrong answer ;(. Correct answer was \'yes\'.');
+      console.log('\'' + number+ '\' is wrong answer ;(. Correct answer was \'no\'.');
       console.log('Let\'s try again, ' + name + '!');
       break;
     }
