@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import  time  from "./brain-games.js";
+import time from "./brain-games.js";
+import {  name } from "../src/cli.js";
 export function z(){
-    time();
-    const name = readlineSync.question('May I have your name? ');
     console.log('Hello,' + name + '!');
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     let random = Math.floor(Math.random() * 25);
