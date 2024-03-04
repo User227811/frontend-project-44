@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import time from "./brain-games.js";
-import {  name } from "../src/cli.js";
+import time from './brain-games.js';
+import {  name } from '../src/cli.js';
 time();
 console.log('What is the result of the expression?');
 let random = Math.random() * 9;
@@ -12,7 +12,7 @@ let win = 0;
 for (let i = 0; i !== 3; i++){
     if (random < 3){
         correct = random1 * random2;
-        console.log('Question: ' + random1 + " * " + random2);
+        console.log('Question: ' + random1 + ' * ' + random2);
         let number = readlineSync.question();
         if (parseInt(number) === correct){
             console.log('Correct!');
@@ -34,7 +34,7 @@ for (let i = 0; i !== 3; i++){
     }
     if (random < 6 && random >= 3){
         correct = random1 + random2;
-        console.log('Question: ' + random1 + " + " + random2);
+        console.log('Question: ' + random1 + ' + ' + random2);
         let number = readlineSync.question();
         if (parseInt(number) === correct){
             console.log('Correct!');
@@ -56,7 +56,7 @@ for (let i = 0; i !== 3; i++){
     }
     if (random < 9 && random >= 6){
         correct = random1 - random2;
-        console.log('Question: ' + random1 + " - " + random2);
+        console.log('Question: ' + random1 + ' - ' + random2);
         let number = readlineSync.question();
 
         if (parseInt(number) === correct){
