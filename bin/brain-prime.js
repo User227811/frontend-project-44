@@ -6,7 +6,7 @@ time();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 let random = Math.floor(((Math.random() * 1000)));
 let rounded = Math.sqrt(random);
-random1 = Math.floor(((Math.random() * 5)));
+let random1 = Math.floor(((Math.random() * 5)));
 let win = 0;
 let examination = 0;
 function isPrime(num) {
