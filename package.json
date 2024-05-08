@@ -4,7 +4,8 @@
   "description": "[![Actions Status](https://github.com/User227811/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/User227811/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,9 @@
   "dependencies": {
     "link": "^2.1.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "globals": "^15.1.0"
   }
 }
