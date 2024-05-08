@@ -87,7 +87,6 @@ for(let z2 = 0; z2 <= 3; z2++){
     }
   }
   if(numbers === 1){
-    console.log("Не простое число");
     console.log('Question: ' + random1);
     let number2 = readlineSync.question("Your answer: ");
     if (number2 === 'yes'){
@@ -101,7 +100,6 @@ for(let z2 = 0; z2 <= 3; z2++){
       examination = false;
     }
   }else{
-    console.log('Число простое');
     console.log('Question: ' + random1);
     let number1 = readlineSync.question("Your answer: ");
     if (number1 === 'yes'){
