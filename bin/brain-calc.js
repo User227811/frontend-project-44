@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import time from "./brain-games.js";
+import readlineSync from "readline-sync" ;
+import time from "./brain-games.js" ;
 import { name } from "../src/cli.js";
 time();
 console.log("What is the result of the expression?");
