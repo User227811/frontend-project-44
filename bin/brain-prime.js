@@ -93,7 +93,7 @@ for (let z2 = 0; z2 <= 3; z2++) {
       console.log("Question: " + random1);
       console.log("your answer: " + number2);
       console.log(
-        "'" + number2 + "' is wrong answer ;(. Correct answer was 'yes'."
+        "'" + number2 + "' is wrong answer ;(. Correct answer was 'no'."
       );
       console.log("Let's try again, " + name + "!");
       break;
